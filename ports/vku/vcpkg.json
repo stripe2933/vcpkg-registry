@@ -1,6 +1,6 @@
 {
   "name": "vku",
-  "version-semver": "0.1.0-test32",
+  "version-semver": "0.1.0-test33",
   "description": "Vulkan simplifications.",
   "homepage": "https://github.com/stripe2933/vku",
   "license": "MIT",

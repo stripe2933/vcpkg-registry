@@ -5,7 +5,7 @@ vcpkg_from_github(
     REPO stripe2933/vku
     REF "v${VERSION}"
     HEAD_REF module
-    SHA512 c31575fe3e00cf3a2d151de8812642413c139364f9c8e618edd557384c40458af89d045d7db0eb7e50f4d1c6a1fd79c9ee0679aafcdb84735e094d2bcf164b76
+    SHA512 6a6917f46560f6635dd5f9c1e8687cf501846158b7e579fd973f4ece192d18b37c834dc9ca66c98084069047dde0a8a855e8e8ef18bd09c511f3575b2f38b9f1
     PATCHES vcpkg-deps.patch
 )
 
@@ -26,10 +26,14 @@ vcpkg_cmake_configure(
 )
 vcpkg_cmake_install()
 
-file(MAKE_DIRECTORY ${CURRENT_PACKAGES_DIR}/debug/share)
-file(RENAME ${CURRENT_PACKAGES_DIR}/debug/cmake/vku ${CURRENT_PACKAGES_DIR}/debug/share/vku)
-file(MAKE_DIRECTORY ${CURRENT_PACKAGES_DIR}/share)
-file(RENAME ${CURRENT_PACKAGES_DIR}/cmake/vku ${CURRENT_PACKAGES_DIR}/share/vku)
+if (NOT VCPKG_BUILD_TYPE STREQUAL "release")
+    file(MAKE_DIRECTORY ${CURRENT_PACKAGES_DIR}/debug/share)
+    file(RENAME ${CURRENT_PACKAGES_DIR}/debug/cmake/vku ${CURRENT_PACKAGES_DIR}/debug/share/vku)
+endif()
+if (NOT VCPKG_BUILD_TYPE STREQUAL "debug")
+    file(MAKE_DIRECTORY ${CURRENT_PACKAGES_DIR}/share)
+    file(RENAME ${CURRENT_PACKAGES_DIR}/cmake/vku ${CURRENT_PACKAGES_DIR}/share/vku)
+endif()
 
 vcpkg_cmake_config_fixup(PACKAGE_NAME "vku")
 
