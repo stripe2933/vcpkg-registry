@@ -1,5 +1,9 @@
 {
   "default": {
+    "cstring-view": {
+      "baseline": "1.0.1",
+      "port-version": 0
+    },
     "vku": {
       "baseline": "0.1.0-test33",
       "port-version": 0
