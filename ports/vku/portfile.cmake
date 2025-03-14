@@ -6,7 +6,7 @@ vcpkg_from_github(
     REF "v${VERSION}"
     HEAD_REF module
     SHA512 535fc5dc27d0bfa48278735fe8cec0134e3123913bab393304dc83ef061b9c94da8ed49f244970942e51b0c4b6e9889e793bf34bef537a2783543e842d27c3ca
-    PATCHES vcpkg-deps.patch
+    PATCHES vcpkg-deps.patch base-dir.patch
 )
 
 # Module project doesn't use header files.
