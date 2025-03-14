@@ -1,7 +1,7 @@
 {
   "name": "vku",
-  "version-semver": "0.1.0-test33",
-  "description": "Vulkan simplifications.",
+  "version": "1.4.304",
+  "description": "A set of Vulkan utilities based on RAII idiom and Modern C++ features.",
   "homepage": "https://github.com/stripe2933/vku",
   "license": "MIT",
   "dependencies": [
@@ -22,9 +22,6 @@
     },
     "shaderc": {
       "description": "Enable runtime GLSL compilation feature using shaderc"
-    },
-    "std-module": {
-      "description": "Use standard library module for the library compilation"
     }
   }
 }

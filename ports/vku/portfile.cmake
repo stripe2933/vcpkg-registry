@@ -5,7 +5,7 @@ vcpkg_from_github(
     REPO stripe2933/vku
     REF "v${VERSION}"
     HEAD_REF module
-    SHA512 6a6917f46560f6635dd5f9c1e8687cf501846158b7e579fd973f4ece192d18b37c834dc9ca66c98084069047dde0a8a855e8e8ef18bd09c511f3575b2f38b9f1
+    SHA512 535fc5dc27d0bfa48278735fe8cec0134e3123913bab393304dc83ef061b9c94da8ed49f244970942e51b0c4b6e9889e793bf34bef537a2783543e842d27c3ca
     PATCHES vcpkg-deps.patch
 )
 
@@ -15,7 +15,6 @@ set(VCPKG_POLICY_EMPTY_INCLUDE_FOLDER enabled)
 # Set CMake variables from the requested features.
 vcpkg_check_features(OUT_FEATURE_OPTIONS FEATURE_OPTIONS
     FEATURES
-        std-module VKU_USE_STD_MODULE
         shaderc VKU_USE_SHADERC
         dynamic-dispatcher VKU_DEFAULT_DYNAMIC_DISPATCHER
 )
