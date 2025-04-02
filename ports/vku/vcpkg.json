@@ -1,7 +1,7 @@
 {
   "name": "vku",
   "version": "1.4.304",
-  "port-version": 1,
+  "port-version": 2,
   "description": "A set of Vulkan utilities based on RAII idiom and Modern C++ features.",
   "homepage": "https://github.com/stripe2933/vku",
   "license": "MIT",
