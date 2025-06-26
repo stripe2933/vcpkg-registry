@@ -1,0 +1,7 @@
+{
+  "name": "flag-enum",
+  "version": "0.1.0",
+  "description": "Make your enum flags.",
+  "homepage": "https://github.com/stripe2933/flag_enum",
+  "license": "MIT"
+}

@@ -1,0 +1,4 @@
+flag-enum provides CMake targets:
+
+    find_package(flag_enum CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE flag_enum::flag_enum)
