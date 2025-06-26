@@ -6,7 +6,7 @@
     },
     "flag-enum": {
       "baseline": "0.1.0",
-      "port-version": 0
+      "port-version": 1
     },
     "vku": {
       "baseline": "1.4.304",
