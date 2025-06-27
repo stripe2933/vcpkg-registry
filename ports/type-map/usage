@@ -1,0 +1,4 @@
+type-map provides CMake targets:
+
+    find_package(type_map CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE type_map::type_map)

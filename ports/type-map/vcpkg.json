@@ -1,0 +1,17 @@
+{
+  "name": "type-map",
+  "version": "0.1.0",
+  "description": "Convert runtime values to compile-time types.",
+  "homepage": "https://github.com/stripe2933/type_map",
+  "license": "MIT",
+  "dependencies": [
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    }
+  ]
+}
