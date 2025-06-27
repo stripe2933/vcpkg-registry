@@ -8,6 +8,10 @@
       "baseline": "0.1.0",
       "port-version": 2
     },
+    "type-map": {
+      "baseline": "0.1.0",
+      "port-version": 0
+    },
     "vku": {
       "baseline": "1.4.304",
       "port-version": 3
