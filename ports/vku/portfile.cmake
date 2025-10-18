@@ -3,26 +3,12 @@ vcpkg_check_linkage(ONLY_STATIC_LIBRARY)
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO stripe2933/vku
-    REF "v${VERSION}"
-    HEAD_REF module
-    SHA512 535fc5dc27d0bfa48278735fe8cec0134e3123913bab393304dc83ef061b9c94da8ed49f244970942e51b0c4b6e9889e793bf34bef537a2783543e842d27c3ca
-    PATCHES vcpkg-deps.patch base-dir.patch cmake-4.0.patch
+    REF "v${VERSION}-fix"
+    HEAD_REF main
+    SHA512 48cef58fafb37c1f797060504b1455edd047006f79ed8460795e57810633c15a58e70c0ed554d8c7a576749cfff4a54d832adce4072f51c03dfdebe0b72d28cd
 )
 
-# Module project doesn't use header files.
-set(VCPKG_POLICY_EMPTY_INCLUDE_FOLDER enabled)
-
-# Set CMake variables from the requested features.
-vcpkg_check_features(OUT_FEATURE_OPTIONS FEATURE_OPTIONS
-    FEATURES
-        shaderc VKU_USE_SHADERC
-        dynamic-dispatcher VKU_DEFAULT_DYNAMIC_DISPATCHER
-)
-
-vcpkg_cmake_configure(
-    SOURCE_PATH "${SOURCE_PATH}"
-    OPTIONS ${FEATURE_OPTIONS}
-)
+vcpkg_cmake_configure(SOURCE_PATH "${SOURCE_PATH}")
 vcpkg_cmake_install()
 
 if (NOT VCPKG_BUILD_TYPE STREQUAL "release")

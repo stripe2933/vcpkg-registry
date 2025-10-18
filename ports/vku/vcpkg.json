@@ -1,9 +1,7 @@
 {
   "name": "vku",
-  "version": "1.4.304",
-  "port-version": 4,
-  "description": "A set of Vulkan utilities based on RAII idiom and Modern C++ features.",
-  "homepage": "https://github.com/stripe2933/vku",
+  "version": "1.4.328",
+  "homepage": "https://github.com/stripe2933/vku/tree/main",
   "license": "MIT",
   "dependencies": [
     {
@@ -16,13 +14,5 @@
     },
     "vulkan-memory-allocator",
     "vulkan-memory-allocator-hpp"
-  ],
-  "features": {
-    "dynamic-dispatcher": {
-      "description": "Use vk::DispatchLoaderDynamic as the default dispatcher"
-    },
-    "shaderc": {
-      "description": "Enable runtime GLSL compilation feature using shaderc"
-    }
-  }
+  ]
 }
