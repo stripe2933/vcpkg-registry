@@ -3,9 +3,9 @@ vcpkg_check_linkage(ONLY_STATIC_LIBRARY)
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO stripe2933/vku
-    REF "v${VERSION}-fix"
+    REF "v${VERSION}"
     HEAD_REF main
-    SHA512 48cef58fafb37c1f797060504b1455edd047006f79ed8460795e57810633c15a58e70c0ed554d8c7a576749cfff4a54d832adce4072f51c03dfdebe0b72d28cd
+    SHA512 0cab6dc17e292af98941144121d8c5a11b48832f21180a739fedb366e53c0ef8b686cd3d1c5976ec9d2c2588fa0f49bc74fc2d8f28a03e506cdd244b07e92d0e
 )
 
 vcpkg_cmake_configure(SOURCE_PATH "${SOURCE_PATH}")
